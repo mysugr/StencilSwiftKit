@@ -152,7 +152,7 @@ This filter accepts an optional boolean parameter that controls the prefixing be
 
 Transforms an arbitrary string into a valid Swift identifier (using only valid characters for a Swift identifier as defined in the Swift language reference). It will apply the following rules:
 
-- Uppercase the first character.
+- ~~Uppercase the first character.~~ First character stays the same.
 - Prefix with an underscore if the first character is a number.
 - Replace invalid characters by an underscore (`_`).
 

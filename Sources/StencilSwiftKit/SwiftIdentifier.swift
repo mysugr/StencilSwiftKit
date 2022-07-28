@@ -93,7 +93,8 @@ enum SwiftIdentifier {
       // Can't use capitalizedString here because it will lowercase all letters after the first
       // e.g. "SomeNiceIdentifier".capitalizedString will because "Someniceidentifier" which is not what we want
       guard let first = string.unicodeScalars.first else { return string }
-      return String(first).uppercased() + String(string.unicodeScalars.dropFirst())
+//      return String(first).uppercased() + String(string.unicodeScalars.dropFirst())
+      return String(first) + String(string.unicodeScalars.dropFirst())
     }
 
     let result = mappedParts.joined(separator: replacement)
